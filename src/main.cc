@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <iostream>
 #include <string>
+#include <vector>
 #include <chrono>
 
 #include "palindrome.h"
@@ -27,6 +28,19 @@ int main() {
 
   std::string longStr = "aizajSdozdjaoAiiiidAsajkdjqUjzjjjjjUzkkksdqqq";
   std::cout << longestPalindromeMap(longStr) << std::endl;
+
+  std::vector<float> o;
+  o.push_back(31.0);
+  o.push_back(41.0);
+  o.push_back(59.0);
+  o.push_back(26.0);
+  o.push_back(41.0);
+  o.push_back(58.0);
+  insertionSort(o);
+
+  for (auto i = o.begin(); i != o.end(); ++i) {
+    std::cout << *i << ' ';
+  }
 
   return 0;
 }
