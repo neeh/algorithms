@@ -25,7 +25,6 @@
 
 #include <stdint.h>
 #include <string>
-#include <algorithm>
 
 // isPalindrome
 bool isPalindrome(std::string str);

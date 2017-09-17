@@ -3,7 +3,8 @@
 #include <string>
 #include <chrono>
 
-#include "palindrome.hpp"
+#include "palindrome.h"
+#include "sorting.h"
 
 int main() {
   std::string s = "OiTeSeTiO";

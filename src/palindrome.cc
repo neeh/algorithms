@@ -1,4 +1,4 @@
-#include "palindrome.hpp"
+#include "palindrome.h"
 
 #include <unordered_map>
 
