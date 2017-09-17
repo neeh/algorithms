@@ -5,7 +5,7 @@
 
 // isPalindrome
 
-bool isPalindrome(std::string str) {
+bool isPalindrome(const std::string &str) {
   // 100%
   uint32_t l = 0;
   uint32_t r = str.size() - 1;
@@ -15,7 +15,7 @@ bool isPalindrome(std::string str) {
   return true;
 }
 
-bool isPalindromePtr(std::string str) {
+bool isPalindromePtr(const std::string &str) {
   // 67%
   const char *l = str.c_str();
   const char *r = l + str.size() - 1;
@@ -25,12 +25,12 @@ bool isPalindromePtr(std::string str) {
   return true;
 }
 
-bool isPalindromeIterator(std::string str) {
+bool isPalindromeIterator(const std::string &str) {
   // 1077%
   return str == std::string(str.rbegin(), str.rend());
 }
 
-bool isPalindromeEqual(std::string str) {
+bool isPalindromeEqual(const std::string &str) {
   // 363%
   return std::equal(str.begin(), str.begin() + str.size() / 2, str.rbegin());
 }
@@ -38,7 +38,7 @@ bool isPalindromeEqual(std::string str) {
 
 // longestPalindrome
 
-std::string longestPalindrome(std::string str) {
+std::string longestPalindrome(const std::string &str) {
   if (isPalindrome(str)) {
     return str;
   } else {
@@ -46,7 +46,7 @@ std::string longestPalindrome(std::string str) {
   }
 }
 
-std::string longestPalindromeMap(std::string str) {
+std::string longestPalindromeMap(const std::string &str) {
   if (isPalindrome(str)) return str;
 
   std::unordered_map<char, uint32_t> cache;

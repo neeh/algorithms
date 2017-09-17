@@ -29,7 +29,8 @@ int main() {
   std::string longStr = "aizajSdozdjaoAiiiidAsajkdjqUjzjjjjjUzkkksdqqq";
   std::cout << longestPalindromeMap(longStr) << std::endl;
 
-  std::vector<float> o = { 31.0, 41.0, 59.0, 26.0, 41.0, 58.0 };
+  static const float arr[] = { 31.0, 41.0, 59.0, 26.0, 41.0, 58.0 };
+  std::vector<float> o(arr, arr + sizeof(arr) / sizeof(float));
   insertionSort(o);
 
   for (auto i = o.begin(); i != o.end(); ++i) {

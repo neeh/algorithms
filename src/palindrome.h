@@ -27,13 +27,13 @@
 #include <string>
 
 // isPalindrome
-bool isPalindrome(std::string str);
-bool isPalindromePtr(std::string str);
-bool isPalindromeIterator(std::string str);
-bool isPalindromeEqual(std::string str);
+bool isPalindrome(const std::string &str);
+bool isPalindromePtr(const std::string &str);
+bool isPalindromeIterator(const std::string &str);
+bool isPalindromeEqual(const std::string &str);
 
 // longestPalindrome
-std::string longestPalindrome(std::string str);
-std::string longestPalindromeMap(std::string str);
+std::string longestPalindrome(const std::string &str);
+std::string longestPalindromeMap(const std::string &str);
 
 #endif // PALINDROME_H
